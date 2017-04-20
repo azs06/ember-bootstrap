@@ -5,3 +5,24 @@
   min-height: 100px;
   background: darkviolet;
 }
+.headerBlock{
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(50, 115, 220, 0.75),
+  rgba(238, 238, 238, 0.16)),url('/images/office.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+nav.navbar-custom{
+  background: transparent;
+}
+nav.navbar-custom .navbar-nav > li > a{
+  color: #fff;
+}
+nav.navbar-custom .navbar-brand{
+  color: #fff;
+}
