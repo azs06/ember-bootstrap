@@ -10,12 +10,43 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(rgba(50, 115, 220, 0.75),
+  background-image: linear-gradient(rgba(92,27,183, 0.75),
   rgba(238, 238, 238, 0.16)),url('/images/office.jpeg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   color: #fff;
+  margin: 0;
+}
+.btn-brand{
+  background: #5c1bb7;
+  color: #fff;
+}
+.btn-transparent{
+  background: transparent;
+  border: 1px solid #fff;
+}
+.btn-transparent:hover{
+  color: #eee;
+}
+.btn-brand:hover{
+  color: #eee;
+}
+.icon-brand{
+  color: #5c1bb7;
+}
+.redefiningWebBlock {
+  background: #5c1bb7;
+  color: #fff;
+  padding: 2em 0 1em 0;
+}
+.serviceTitle{
+  color: #fff;
+}
+@media all and (max-width: 768px){
+  .navbar-default .navbar-collapse{
+    background: rgba(0, 0, 0, .50);
+  }
 }
 nav.navbar-custom{
   background: transparent;
@@ -25,4 +56,25 @@ nav.navbar-custom .navbar-nav > li > a{
 }
 nav.navbar-custom .navbar-brand{
   color: #fff;
+}
+nav.navbar-custom.navbar-absolute{
+  position: absolute;
+}
+.servicesBlock{
+  min-height: 80vh;
+  background: rgba(0, 0, 0, 1);
+  padding: 2em 0 1em 0;
+}
+.servicesBlock__titleBlock{
+  color: #fff;
+  margin-bottom: 5em;
+}
+.servicesBlock__titleBlock p{
+  color: #999;
+}
+.servicesBlock__iconsBlock section {
+  margin-bottom: 5em;
+}
+.servicesBlock__iconsBlock p{
+  color: #999;
 }
