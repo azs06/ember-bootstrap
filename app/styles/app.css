@@ -1,9 +1,25 @@
 .imageBlock{
-  min-height: 250px;
+  min-height: 150px;
+}
+.imageBlock img{
+  width: 160px;
+  height: auto;
+  margin: 0 auto;
 }
 .partnerBlock{
   min-height: 100px;
-  background: darkviolet;
+  background: #5c1bb7;
+  margin-top: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partnerBlock__images{
+
+}
+.partnerBlock__images li:nth-child(2){
+  margin-left: 2em;
+  margin-right: 2em;
 }
 .headerBlock{
   min-height: 70vh;
@@ -77,4 +93,66 @@ nav.navbar-custom.navbar-absolute{
 }
 .servicesBlock__iconsBlock p{
   color: #999;
+}
+
+.ourTeamBlock{
+  height: 100%;
+}
+.ourTeamBlock__header{
+  padding: 1em 0 4em 0;
+}
+.ourTeamBlock__social i{
+  color: #5c1bb7;
+}
+.teamMember__name{
+  color: #5c1bb7;
+}
+.teamMember__role{
+  color: #800080;
+}
+.contactBlock{
+  background: #222222;
+  padding: 3em 0;
+}
+.contactBlock__title{
+  color: #fff;
+}
+.contactBlock__title p{
+  color: #999999;
+}
+.contactBlock__formBlock{
+  margin-top: 4em;
+}
+.contactBlock__formBlock--form .form-control {
+  background: #333;
+  color: #999;
+  border: 0;
+}
+.contactBlock__formBlock--form .btn-transparent{
+  border: 1px solid #999;
+  color: #fff;
+}
+.contactBlock__contact strong{
+  color: #fff;
+}
+.contactBlock__contact p{
+  color: #999;
+}
+.contactBlock__contact i{
+  color: #7b7b7b;
+}
+.contactBlock__contact--icons{
+  margin-top: 1em;
+}
+
+.footerBlock{
+  background: #1f1f1f;
+  padding: 3em 0;
+}
+.footerBlock__menu--header{
+  color: #fff;
+}
+.footerBlock__menu--items{
+  color: #999;
+  margin-top: 0.5em;
 }
