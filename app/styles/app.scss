@@ -66,7 +66,16 @@
 }
 nav.navbar-custom{
   background: transparent;
+  &.affix{
+    background: #2d2d2d;
+    border: none;
+    transition: all 0.3ms;
+    li a:hover{
+      color: #999;
+    }
+  }
 }
+
 nav.navbar-custom .navbar-nav > li > a{
   color: #fff;
 }
