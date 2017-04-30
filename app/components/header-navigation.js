@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   didInsertElement(){
-    this.$('.navbar').affix({
+    Ember.$('.navbar').affix({
       offset: {
         top: 100,
         bottom: function () {

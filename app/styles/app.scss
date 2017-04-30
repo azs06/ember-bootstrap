@@ -1,35 +1,36 @@
+$primary-color: #5c1bb7;
 html{
   overflow-x: hidden;
 }
 .imageBlock{
   min-height: 150px;
-}
-.imageBlock img{
-  width: 150px;
-  height: 150px;
-  margin: 0 auto;
+  img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
 }
 .partnerBlock{
   min-height: 100px;
-  background: #5c1bb7;
+  background: $primary-color;
   margin-top: 5em;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.partnerBlock__images{
-  margin-top: 10px;
-  @media all and (max-width: 600px){
-    li{
-      width: 100%;
+  &__images{
+    margin-top: 10px;
+    @media all and (max-width: 600px){
+      li{
+        width: 100%;
+      }
     }
-  }
-}
-.partnerBlock__images li:nth-child(2){
-  margin-left: 2em;
-  margin-right: 2em;
-  @media all and (max-width: 600px){
-    margin: 2em 0 2em 0;
+    li:nth-child(2){
+      margin-left: 2em;
+      margin-right: 2em;
+      @media all and (max-width: 600px){
+        margin: 2em 0 2em 0;
+      }
+    }
   }
 }
 .headerBlock{
@@ -44,26 +45,24 @@ html{
   background-size: cover;
   color: #fff;
   margin: 0;
-  &__messageBlock{
-    //margin: 2rem 0;
-  }
 }
 .btn-brand{
-  background: #5c1bb7;
+  background: $primary-color;
   color: #fff;
+  &:hover{
+    color: #eee;
+  }
 }
 .btn-transparent{
   background: transparent;
   border: 1px solid #fff;
+  &:hover{
+    color: #eee;
+  }
 }
-.btn-transparent:hover{
-  color: #eee;
-}
-.btn-brand:hover{
-  color: #eee;
-}
+
 .icon-brand{
-  color: #5c1bb7;
+  color: $primary-color;
 }
 .redefiningWebBlock {
   background: #5c1bb7;
@@ -111,85 +110,91 @@ nav.navbar-custom.navbar-absolute{
   min-height: 80vh;
   background: rgba(0, 0, 0, 1);
   padding: 2em 0 1em 0;
-}
-.servicesBlock__titleBlock{
-  color: #fff;
-  margin-bottom: 5rem;
-  padding: 0 2rem 0;
-}
-.servicesBlock__titleBlock p{
-  color: #999;
-}
-.servicesBlock__iconsBlock section:first-child {
-  @media all and (min-width: 768px){
-    margin-bottom: 5em;
+  &__titleBlock{
+    color: #fff;
+    margin-bottom: 5rem;
+    padding: 0 2rem 0;
+    p{
+      color: #999;
+    }
+  }
+  &__iconsBlock{
+    p{
+      color: #999;
+    }
+    section:first-child {
+      @media all and (min-width: 768px){
+        margin-bottom: 5em;
+      }
+    }
   }
 }
-.servicesBlock__iconsBlock p{
-  color: #999;
-}
-
 .ourTeamBlock{
   height: 100%;
+  &__header{
+    padding: 1em 0 4em 0;
+  }
+  &__social li{
+    color: $primary-color;
+  }
 }
-.ourTeamBlock__header{
-  padding: 1em 0 4em 0;
-}
-.ourTeamBlock__social i{
-  color: #5c1bb7;
-}
-.teamMember__name{
-  color: #5c1bb7;
-}
-.teamMember__role{
-  color: #800080;
+.teamMember{
+  &__name{
+    color: $primary-color;
+  }
+  &__role{
+    color: #800080;
+  }
 }
 .contactBlock{
   background: #222222;
   padding: 3em 0;
-}
-.contactBlock__title{
-  color: #fff;
-}
-.contactBlock__title p{
-  color: #999999;
-}
-.contactBlock__formBlock{
-  margin-top: 2rem;
-  @media all and (min-width: 768px){
-    margin-top: 4rem;
+  &__title{
+    color: #fff;
+    p{
+      color: #999999;
+    }
+  }
+  &__formBlock{
+    margin-top: 2rem;
+    @media all and (min-width: 768px){
+      margin-top: 4rem;
+    }
+    &--form .form-control{
+      background: #333;
+      color: #999;
+      border: 0;
+    }
+    &--form .btn-transparent{
+      border: 1px solid #999;
+      color: #fff;
+    }
+  }
+  &__contact{
+    strong{
+      color: #fff;
+    }
+    p{
+      color: #999;
+    }
+    i{
+      color: #7b7b7b;
+    }
+    &--icons{
+      margin-top: 1em;
+    }
   }
 }
-.contactBlock__formBlock--form .form-control {
-  background: #333;
-  color: #999;
-  border: 0;
-}
-.contactBlock__formBlock--form .btn-transparent{
-  border: 1px solid #999;
-  color: #fff;
-}
-.contactBlock__contact strong{
-  color: #fff;
-}
-.contactBlock__contact p{
-  color: #999;
-}
-.contactBlock__contact i{
-  color: #7b7b7b;
-}
-.contactBlock__contact--icons{
-  margin-top: 1em;
-}
-
 .footerBlock{
   background: #1f1f1f;
   padding: 3em 0;
-}
-.footerBlock__menu--header{
-  color: #fff;
-}
-.footerBlock__menu--items{
-  color: #999;
-  margin-top: 0.5em;
+  &__menu{
+    &--header{
+      color: #fff;
+    }
+    &--items{
+      color: #999;
+      margin-top: 0.5em;
+    }
+  }
 }
